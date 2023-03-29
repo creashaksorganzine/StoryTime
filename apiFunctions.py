@@ -1,7 +1,6 @@
 import openai
 import os
 from dotenv import load_dotenv
-import json
 
 # Create a variable to store the chat history
 chat_history = []
@@ -86,6 +85,7 @@ def summonCthulu():
         messages=chat_history,
         temperature=0,
     )
+
     # Get the message object from the first choice
     message = response["choices"][0]["message"]
     # Format the message content as a dictionary
