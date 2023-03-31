@@ -130,3 +130,7 @@ dmypy.json
 
 # secrets
 .secrets.env
+
+# Coursework
+ChatGPT.ipynb
+/coursework

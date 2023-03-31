@@ -12,7 +12,7 @@ def first_chat_request_response():
     # load environment variables from .env file
     load_dotenv('.secrets.env')
     # set API key from environment variable
-    openai.api_key = os.environ["openaiApi"]
+    openai.api_key = os.environ["OPENAI_API_KEY"]
     # Define the model name
     MODEL = "gpt-3.5-turbo"
     # Define the content to start the prompt
@@ -62,7 +62,7 @@ def summonCthulu():
     # load environment variables from .env file
     load_dotenv('.secrets.env')
     # set API key from environment variable
-    openai.api_key = os.environ["openaiApi"]
+    openai.api_key = os.environ["OPENAI_API_KEY"]
     # Define the model name
     MODEL = "gpt-3.5-turbo"
     # Define the content to start the prompt
@@ -92,3 +92,6 @@ def summonCthulu():
     message_content = {"role": message["role"], "content": message["content"]}
     # Append the message content to the chat history
     chat_history.append(message_content)
+
+
+print(chat_history)
