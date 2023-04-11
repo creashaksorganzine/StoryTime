@@ -1,7 +1,7 @@
 import openai
 import os
 from dotenv import load_dotenv
-import json
+# import json
 
 chat_history = []
 PROMPT = "Write a passage describing radio wave propegation."
