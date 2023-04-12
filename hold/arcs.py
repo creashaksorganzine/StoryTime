@@ -1,5 +1,5 @@
 # arc dictionaries
-import arcsDicts
+import hold.arcsDicts as arcsDicts
 # hero_journey = {
 #     "arc": "The Hero\'s Journey",
 #     "Call to Adventure": "The hero receives a call to leave their ordinary world and embark on a journey or quest.",
